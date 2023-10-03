@@ -4,5 +4,5 @@ def print_last_digit(number):
         last_num = (-number % 10)
     elif number >= 0:
         last_num = number % 10
-    print(f"The last digit of {number} is {last_digit}")
-    return last_digit
+    print("{:d}".format(last_num), end="")
+    return last_num
