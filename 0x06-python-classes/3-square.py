@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
-
 """
 2-square.py: is a Square class that defines a square
 """
@@ -22,6 +21,6 @@ class Square:
         self.__size = size
 
     def area(self):
-        """Public instance method computed and returns the current square area"""
-        area = self.__size * self.__size
+        """Public instance method that returns the current square area"""
+        area = self.__size * 2
         return(area)
