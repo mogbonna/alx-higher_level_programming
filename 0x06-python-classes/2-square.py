@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 """
-2-square.py: is a class Square that defines a square
+2-square.py: is a Square class that defines a square
 """
 
 
