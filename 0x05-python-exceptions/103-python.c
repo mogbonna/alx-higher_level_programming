@@ -1,15 +1,12 @@
-#include <stdio.h>
-#include <unistd.h>
 #include <Python.h>
+#include <object.h>
+#include <listobject.h>
+#include <bytesobject.h>
 
-/**
- * print_python_list - Prints information about a Python list object
- * @p: PyObject pointer to a Python list
- */
 void print_python_list(PyObject *p)
 {
-	Py_ssize_t size = PyList_size(p);
-	Py_ssize_t i;
+	long int size = PyList_size(p);
+	int i;
 	PyObject *item;
 
 	if (!PyList_Check(p))
@@ -29,15 +26,11 @@ void print_python_list(PyObject *p)
 	}
 }
 
-/**
- * print_python_bytes - Prints information about a Python bytes object
- * @p: PyObject pointer to a Python bytes
- */
 void print_python_bytes(PyObject *p)
 {
-	Py_ssize_t size;
-	Py_ssize_t i;
-	char *bytes;
+	long int size;
+	int i;
+	const char *bytes;
 
 	if (!PyBytes_Check(p))
 	{
@@ -70,10 +63,6 @@ void print_python_bytes(PyObject *p)
 	printf("\n");
 }
 
-/**
- * print_python_float - Prints information about a Python float object
- * @p: PyObject pointer to a Python float
- */
 void print_python_float(PyObject *p)
 {
 	char *repr;
