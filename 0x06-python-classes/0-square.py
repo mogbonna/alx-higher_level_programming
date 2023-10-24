@@ -1,10 +1,14 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
+"""
+0-square.py: is an empty Square class that defines a square
+"""
 
-""" This module defines the Square class."""
 
 class Square:
+    """This is a empty class Square
 
-    """ This class represents a square."""
+    this Class don't have args and Attributes
 
+    """
     pass

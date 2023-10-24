@@ -1,20 +1,18 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
+"""
+1-square.py: is a Square class that defines a square
+"""
 
-"""
-This module contains the definition of the Square class.
-"""
 
 class Square:
-    """
-    The Square class represents a square.
+    """class Square that defines a square
+
+    Attributes:
+        attr1 (size): Size of the Square.
+
     """
 
-    def __init__(self, size):
-        """
-        Initializes a new square with the given size.
-
-        Args:
-            size (int): The size of the square.
-        """
+    def __init__(self, size=0):
+        """Initializer _Square__size"""
         self.__size = size
