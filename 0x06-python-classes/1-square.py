@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# -*- coding: UTF-8 -*-
+
 """
 This module contains the definition of the Square class.
 """
