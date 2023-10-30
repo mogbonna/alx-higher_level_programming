@@ -1,0 +1,118 @@
+===============================
+	Text indentation
+===============================
+Import module:
+==============
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Function:
+=========
+function that prints a text with 2 new lines after
+each of these characters: ., ? and :
+
+	>>> text_indentation("Hello Moses")
+	Hello Moses
+
+	>>> text_indentation("School          ")
+	School
+
+	>>> text_indentation("        School")
+	School
+    
+	>>> text_indentation("		School		")
+	School
+    
+    	>>> text_indentation("")
+
+	>>> text_indentation("      ")
+
+	>>> text_indentation("Hello: School")
+	Hello:
+	<BLANKLINE>
+	School
+
+	>>> text_indentation("      ?:  :  ")
+	?
+	<BLANKLINE>
+	:
+	<BLANKLINE>
+	:
+	<BLANKLINE>
+
+	>>> text_indentation("\n")
+	<BLANKLINE>
+
+	>>> text_indentation("\n\n")
+	<BLANKLINE>
+	<BLANKLINE>
+
+	>>> text_indentation("Hello\n\n")
+	Hello
+	<BLANKLINE>
+
+	>>> text_indentation("Hello: Holberton? school. fooooo")
+	Hello:
+	<BLANKLINE>
+	Holberton?
+	<BLANKLINE>
+	school.
+	<BLANKLINE>
+	fooooo
+
+	>>> text_indentation("Hello   :     Holberton    ?    school.    fooo")
+	Hello:
+	<BLANKLINE>
+	Holberton?
+	<BLANKLINE>
+	school.
+	<BLANKLINE>
+	fooo
+
+	>>> text_indentation("Hello   :     Holberton    ?    school.    fooo     ")
+	Hello:
+	<BLANKLINE>
+	Holberton?
+	<BLANKLINE>
+	school.
+	<BLANKLINE>
+	fooo
+	
+	>>> text_indentation(".?:")
+	.
+	<BLANKLINE>
+	?
+	<BLANKLINE>
+	:
+	<BLANKLINE>
+	
+	>>> text_indentation("     ?   ")
+	?
+	<BLANKLINE>
+	
+	>>> text_indentation("?Hello.")
+	?
+	<BLANKLINE>
+	Hello.
+	<BLANKLINE>
+
+	>>> text_indentation("?\n\n.\n\n:")
+	?
+	<BLANKLINE>
+	<BLANKLINE>
+	<BLANKLINE>
+	.
+	<BLANKLINE>
+	<BLANKLINE>
+	<BLANKLINE>
+	:
+	<BLANKLINE>
+
+	>>> text_indentation(None)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+	>>> text_indentation(33)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
