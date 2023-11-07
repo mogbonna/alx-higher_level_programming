@@ -4,7 +4,7 @@
 
 def write_file(filename="", text=""):
     """
-    Writes a string to a text file using UTF-8 encoding and returns the number of characters written.
+    Writes a string to a text file using UTF-8 encoding.
 
     Args:
     filename (str): The path to the file to be written to.
