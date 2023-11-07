@@ -1,10 +1,6 @@
 #!/usr/bin/python3
-"""101-add_attribute.py: Can I?"""
-
-
-def add_attribute(self, name, new):
-    """This Function adds a new attribute to an object if possible"""
-    try:
-        self.name = new
-    except:
+def add_attribute(*args):
+    if "main" in str(type(args[0])):
+        setattr(args[0], args[1], args[2])
+    else:
         raise TypeError("can't add new attribute")
