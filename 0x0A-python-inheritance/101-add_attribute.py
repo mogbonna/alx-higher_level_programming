@@ -1,8 +1,12 @@
 #!/usr/bin/python3
+"""Define a function attributes."""
 
 
-def add_attribute(*args):
-    if "main" in str(type(args[0])):
-        setattr(args[0], args[1], args[2])
-    else:
+def add_attribute(obj, att, value):
+    """Add a new attribute to an object if possible.
+    Raises:
+        TypeError: If the attribute cannot be added.
+    """
+    if not hasattr(obj, "__dict__"):
         raise TypeError("can't add new attribute")
+    setattr(obj, att, value)
