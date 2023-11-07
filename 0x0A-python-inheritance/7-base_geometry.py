@@ -4,13 +4,15 @@
 
 class BaseGeometry:
     """
-    Base Geometry class with area() and integer_validator() methods.
+    Base Geometry class with area()
+    and integer_validator() methods.
     """
     pass
 
     def area(self):
         """
-        Raises an Exception with the message "area() is not implemented."
+        Raises an Exception with the message
+        "area() is not implemented."
         """
         raise Exception("area() is not implemented")
 
@@ -26,6 +28,7 @@ class BaseGeometry:
             ValueError: If value is less than or equal to 0.
         """
         if not isinstance(value, int):
-            raise TypeError(f"{name} must be an integer")
+            raise TypeError("{} must be an integer".format(name))
         if value <= 0:
-            raise ValueError(f"{name} must be greater than 0")
+            raise ValueError("{} must be greater than 0".format(name))
+
