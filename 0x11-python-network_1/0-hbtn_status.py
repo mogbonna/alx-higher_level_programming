@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This script fetches https://alx-intranet.hbtn.io/status using the urllib 
+This script fetches https://alx-intranet.hbtn.io/status using the urllib
 package and displays the body of the response in a formatted manner.
 """
 import urllib.request
